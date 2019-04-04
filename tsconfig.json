@@ -3,12 +3,21 @@
         "outDir": "./built/",
         "sourceMap": true,
         "strict": true,
-        "module": "es2015",
+        "module": "esnext",
         "moduleResolution": "node",
         "target": "es5",
-        "experimentalDecorators": true
+        "lib": ["es5", "es6", "dom"],
+        "experimentalDecorators": true,
+        "esModuleInterop": true,
+        "types": [
+            "jest"
+        ]
     },
     "include": [
-        "./src/**/*"
+        "./src/**/*",
+        "./__tests__/**/*"
+    ],
+    "exclude": [
+        "node_modules"
     ]
 }

@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [],
   "author": {
@@ -15,15 +15,24 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/template": "^7.4.0",
+    "@types/jest": "^24.0.11",
+    "@types/yargs": "^12.0.11",
+    "@vue/test-utils": "^1.0.0-beta.29",
+    "babel-core": "^6.26.3",
+    "jest": "^24.7.1",
+    "ts-jest": "^24.0.1",
+    "typescript": "^3.4.1",
     "vue": "^2.5.2",
     "vue-class-component": "^6.0.0",
+    "vue-jest": "^3.0.4",
     "vue-property-decorator": "^6.0.0",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
     "css-loader": "^0.28.1",
     "ts-loader": "^2.0.3",
-    "typescript": "^2.7.2",
     "vue-loader": "^12.0.3",
     "vue-template-compiler": "^2.5.2",
     "webpack": "^2.5.0"

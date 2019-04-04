@@ -28,7 +28,7 @@ export default class HelloDecorator extends Vue {
     }
 
     get exclamationMarks(): string {
-        return Array(this.enthusiasm + 1).join('!');
+        return 'aa';
     }
 }
 </script>
